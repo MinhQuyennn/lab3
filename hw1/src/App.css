@@ -1,0 +1,45 @@
+
+.App {
+  height: 100%;
+  text-align: center;
+  background-color: rgb(25, 25, 68);
+  color: white;
+}
+
+#title {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.drums {
+  display: flex;
+  justify-content: space-around;
+}
+
+.abc {
+  position: relative;
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  margin: 10px; /* Adjust the margin as needed */
+  overflow: hidden;
+  border-radius: 10px; /* Adjust the border-radius for rounded corners */
+
+  /* Center the image and letter */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.abc img {
+  width: 80px; /* Adjust the width as needed */
+  height: 80px; /* Adjust the height as needed */
+  object-fit: cover; /* Maintain aspect ratio while covering the container */
+  border-radius: 50%; /* Ensure the image is a circle */
+}
+
+.abc span {
+  position: absolute;
+  font-size: 1.2em;
+  color: white; /* Set the color to contrast with the image */
+  z-index: 1; /* Ensure the letter is above the image */
+}
